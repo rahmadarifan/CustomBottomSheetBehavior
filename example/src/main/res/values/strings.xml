@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CustomBottomSheetBehavior</string>
+    <string name="background">Background</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="example">Example</string>
+</resources>

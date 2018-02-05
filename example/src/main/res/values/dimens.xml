@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dimens_32dp">32dp</dimen>
+    <dimen name="peek_height">192dp</dimen>
+    <dimen name="anchor_offset">220dp</dimen>
+    <dimen name="dimens_16sp">16sp</dimen>
+    <dimen name="dimens_8dp">8dp</dimen>
+    <dimen name="dimens_2dp">2dp</dimen>
+    <dimen name="dimens_min1dp">-1dp</dimen>
+    <dimen name="dimens_16dp">16dp</dimen>
+</resources>

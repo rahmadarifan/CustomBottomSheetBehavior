@@ -1,0 +1,35 @@
+apply plugin: 'com.android.library'
+
+ext.majorVersion = 0
+ext.minorVersion = 0
+ext.patchVersion = 1
+ext.preRelease = ""
+
+
+android {
+    compileSdkVersion rootProject.compileSdkVersion
+    buildToolsVersion rootProject.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.minSdkVersion
+        versionName generateVersionName()
+    }
+
+    buildTypes {
+        release {
+        }
+    }
+
+}
+
+dependencies {
+    implementation "com.android.support:design:${supportVersion}"
+}
+
+private String generateVersionName() {
+    String versionName = "${ext.majorVersion}.${ext.minorVersion}.${ext.patchVersion}"
+    if (!ext.preRelease.isEmpty()) {
+        versionName = versionName + "-" + ext.preRelease
+    }
+    return versionName
+}
